@@ -7,6 +7,8 @@ RUN rm /etc/nginx/nginx.conf /etc/nginx/sites-available/default /etc/nginx/sites
 COPY nginx/nginx.conf /etc/nginx/
 COPY nginx/sites-available/hypocrisy.info /etc/nginx/sites-available/
 RUN ln -s /etc/nginx/sites-available/hypocrisy.info /etc/nginx/sites-enabled/hypocrisy.info
+RUN mkdir /etc/letsencrypt
+COPY letsencrypt/ /etc/letsencrypt
 RUN mkdir /var/www/hypocrisy
 COPY www/ /var/www/hypocrisy
 EXPOSE 80
