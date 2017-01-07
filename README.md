@@ -8,5 +8,6 @@ Docker source of site's index page.
 ### SSL
 1. letsencrypt should run in interactive interface.
    ```
-   letsencrypt certonly -a webroot --webroot-path=/var/www/html -d example.com -d www.example.com
+   letsencrypt certonly -a webroot --webroot-path=/var/www/hypocrisy -d hypocrisy.info -d www.hypocrisy.info
    ```
+2. docker cp <containerId>:/file/path/within/container /host/path/target
