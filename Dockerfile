@@ -9,4 +9,5 @@ COPY nginx/sites-available/hypocrisy.info /etc/nginx/sites-available/
 RUN ln -s /etc/nginx/sites-available/hypocrisy.info /etc/nginx/sites-enabled/hypocrisy.info
 RUN mkdir /var/www/hypocrisy
 COPY www/ /var/www/hypocrisy
+EXPOSE 80
 CMD service nginx start
