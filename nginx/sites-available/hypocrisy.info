@@ -36,7 +36,7 @@ server {
 	#
 	# include snippets/snakeoil.conf;
 
-	root /var/www/hypocirsy;
+	root /var/www/hypocrisy;
     error_page 404 = /404.html;     # Add on 11/06/2015, redirect to a new 404
 
 	# Add index.php to the list if you are using PHP
