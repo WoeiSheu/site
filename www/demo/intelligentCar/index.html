@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICC of BIT</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="./style/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="./style/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="./style/index.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">北理智能车</a>
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li id="ftp"><a href="ftp://10.1.166.197" target="_blank">FTP</a></li>
+                <li id="Wiki"><a href="http://10.1.166.197:8080/xwiki/bin/view/" target="_blank">Wiki</a></li>
+                <li id="forum"><a href="http://10.1.166.197/forum.php" target="_blank">Forum</a></li>
+                <li id="contact"><a href="#contact">Contact</a></li>
+              </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./member.php?mod=logging&action=login">Login</a></li>
+                    <li><a href="mailto:bit_smartcar@163.com">Freescale Intelligent Car Club of BIT</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar nav-collapse">
+          <h2 id="logo">
+          	<img src="./data/logo.png"/>
+          </h2>
+          <ul class="nav nav-sidebar">
+            <h5 class="active">通知公告 <span class="sr-only">(current)</span></h5>
+            <li id="arrangement"><a href="#">近期安排</a></li>
+            <li id="duty"><a href="#">值班情况</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <h5>车队介绍</h5>
+            <li id="award"><a href="#">历届获奖</a></li>
+            <li id="honoredPeople"><a href="#">风云人物</a></li>
+            <li id="members"><a href="#">车队成员</a></li>
+            <li id="joinUs"><a href="#">加入我们</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <h5>友情链接</h5>
+            <li><a href="http://www.znczz.com/" target="_blank">智能车制作</a></li>
+            <li><a href="http://www.smartcar.au.tsinghua.edu.cn/" target="_blank">智能车官网</a></li>
+            <li><a href="http://www.ustbsmartcar.org/forum.php" target="_blank">北科智能车</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h2 class="sub-header">通知公告</h2>
+          <div class="table-responsive" id="content">
+          <!-- Add Content Here-->
+          	<!--
+          	<video id="videoDemo" width="352" height="264" controls autobuffer>
+          	    <source src="./data/demo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+          	</video>
+	-->
+          </div>
+        </div>
+      </div>
+    </div>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
