@@ -50,6 +50,9 @@ server {
         try_files $uri $uri/ =404;
     }
 
+    location ~ /.well-known {
+        allow all;
+    }
     # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
     #
     #location ~ \.php$ {
