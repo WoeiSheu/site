@@ -11,5 +11,5 @@ RUN mkdir /etc/letsencrypt
 COPY letsencrypt/ /etc/letsencrypt
 RUN mkdir /var/www/hypocrisy
 COPY www/ /var/www/hypocrisy
-EXPOSE 80
+EXPOSE 80 443
 CMD nginx && /bin/bash
